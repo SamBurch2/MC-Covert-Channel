@@ -1,4 +1,4 @@
-# single_chest_encode_real_stacks.py
+# chest_encode.py
 # Encodes a message into ONE chest; each char = ASCII count of a unique block
 
 import sys, random, minescript
@@ -74,3 +74,4 @@ for i, ch in enumerate(message):
 minescript.echo(f"✅ Encoded '{message}' into one chest at {x},{y},{z}")
 for i, ch in enumerate(message):
     minescript.echo(f"  '{ch}' → {ord(ch)} × {BLOCK_POOL[i % len(BLOCK_POOL)]}")
+
