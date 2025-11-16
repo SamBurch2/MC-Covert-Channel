@@ -1,4 +1,4 @@
-# music_disc_encode.py
+# music_encode.py
 # Encodes a message into one chest using 4-bit music-disc encoding
 
 import sys, minescript
@@ -75,3 +75,4 @@ if slot < 27:
 minescript.echo(f"🎵 Encoded '{message}' into {slot} music discs + end marker at {x},{y},{z}")
 for nib in nibbles:
     minescript.echo(f"  {nib} → {DISC_MAP.get(nib, '???')}")
+
