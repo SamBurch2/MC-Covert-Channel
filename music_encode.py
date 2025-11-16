@@ -62,7 +62,7 @@ for nib in nibbles:
         minescript.execute(cmd)
         slot += 1
 
-# --- NEW ADDITION: place music_disc_wait as END-OF-MESSAGE marker ---
+# place music_disc_wait as END-OF-MESSAGE marker ---
 if slot < 27:
     minescript.execute(
         f"item replace block {x} {y} {z} container.{slot} "
@@ -75,4 +75,5 @@ if slot < 27:
 minescript.echo(f"🎵 Encoded '{message}' into {slot} music discs + end marker at {x},{y},{z}")
 for nib in nibbles:
     minescript.echo(f"  {nib} → {DISC_MAP.get(nib, '???')}")
+
 
